@@ -1,0 +1,291 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:44:05,303 p=40834 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 19:44:06,365 p=40834 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 19:44:06,422 p=40834 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 19:44:10,552 p=40834 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 19:44:10,977 p=40834 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 19:44:11,051 p=40834 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 19:44:11,221 p=40834 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 19:44:11,257 p=40834 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:44:11,350 p=40834 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:44:11,376 p=40834 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 19:44:12,424 p=40834 u=osboxes n=ansible | changed: [localhost] => (item=alumno)
+2024-11-17 19:44:12,642 p=40834 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 19:44:13,130 p=40834 u=osboxes n=ansible | changed: [localhost] => (item=equipo)
+2024-11-17 19:44:13,792 p=40834 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 19:44:13,816 p=40834 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 19:44:14,124 p=40834 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: . expected token 'end of print statement', got 'Correa'
+2024-11-17 19:44:14,127 p=40834 u=osboxes n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleError: template error while templating string: expected token 'end of print statement', got 'Correa'. String: Nombre: {{ Emanuel }}\nApellido: {{ Gaona Correa }}\nDNI: {{ 43919363 }}\n\n. expected token 'end of print statement', got 'Correa'"}
+2024-11-17 19:44:14,203 p=40834 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: . expected token 'end of print statement', got 'Correa'
+2024-11-17 19:44:14,203 p=40834 u=osboxes n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "AnsibleError: template error while templating string: expected token 'end of print statement', got 'Correa'. String: Nombre: {{ Emanuel }}\nApellido: {{ Gaona Correa }}\nDNI: {{ 43919363 }}\n\n. expected token 'end of print statement', got 'Correa'"}
+2024-11-17 19:44:14,205 p=40834 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 19:44:14,209 p=40834 u=osboxes n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:44:14,211 p=40834 u=osboxes n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:45:06,434 p=41263 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 19:45:06,816 p=41263 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 19:45:06,835 p=41263 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 19:45:10,145 p=41263 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 19:45:10,223 p=41263 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 19:45:10,315 p=41263 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 19:45:10,463 p=41263 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 19:45:10,515 p=41263 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:45:10,573 p=41263 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:45:10,598 p=41263 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 19:45:11,813 p=41263 u=osboxes n=ansible | ok: [localhost] => (item=alumno)
+2024-11-17 19:45:11,951 p=41263 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 19:45:12,671 p=41263 u=osboxes n=ansible | ok: [localhost] => (item=equipo)
+2024-11-17 19:45:12,955 p=41263 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 19:45:12,983 p=41263 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 19:45:13,261 p=41263 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: . expected token 'end of print statement', got 'Correa'
+2024-11-17 19:45:13,263 p=41263 u=osboxes n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleError: template error while templating string: expected token 'end of print statement', got 'Correa'. String: Nombre: {{ Emanuel }}\nApellido: {{ Gaona Correa }}\nDNI: {{ 43919363 }}\n\n. expected token 'end of print statement', got 'Correa'"}
+2024-11-17 19:45:13,367 p=41263 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: . expected token 'end of print statement', got 'Correa'
+2024-11-17 19:45:13,367 p=41263 u=osboxes n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "AnsibleError: template error while templating string: expected token 'end of print statement', got 'Correa'. String: Nombre: {{ Emanuel }}\nApellido: {{ Gaona Correa }}\nDNI: {{ 43919363 }}\n\n. expected token 'end of print statement', got 'Correa'"}
+2024-11-17 19:45:13,373 p=41263 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 19:45:13,374 p=41263 u=osboxes n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:45:13,374 p=41263 u=osboxes n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:47:58,904 p=41633 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 19:47:59,168 p=41633 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 19:47:59,203 p=41633 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 19:48:02,344 p=41633 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 19:48:03,523 p=41633 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 19:48:03,587 p=41633 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 19:48:03,749 p=41633 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 19:48:03,817 p=41633 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:48:03,875 p=41633 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:48:03,906 p=41633 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 19:48:05,040 p=41633 u=osboxes n=ansible | ok: [localhost] => (item=alumno)
+2024-11-17 19:48:05,196 p=41633 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 19:48:06,025 p=41633 u=osboxes n=ansible | ok: [localhost] => (item=equipo)
+2024-11-17 19:48:06,166 p=41633 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 19:48:06,181 p=41633 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 19:48:06,480 p=41633 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: . expected token 'end of print statement', got 'Correa'
+2024-11-17 19:48:06,481 p=41633 u=osboxes n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleError: template error while templating string: expected token 'end of print statement', got 'Correa'. String: Nombre: {{ Emanuel }}\nApellido: \"{{ Gaona Correa }}\"\nDNI: {{ 43919363 }}\n\n. expected token 'end of print statement', got 'Correa'"}
+2024-11-17 19:48:06,512 p=41633 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: . expected token 'end of print statement', got 'Correa'
+2024-11-17 19:48:06,513 p=41633 u=osboxes n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "AnsibleError: template error while templating string: expected token 'end of print statement', got 'Correa'. String: Nombre: {{ Emanuel }}\nApellido: \"{{ Gaona Correa }}\"\nDNI: {{ 43919363 }}\n\n. expected token 'end of print statement', got 'Correa'"}
+2024-11-17 19:48:06,528 p=41633 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 19:48:06,529 p=41633 u=osboxes n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:48:06,530 p=41633 u=osboxes n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:49:15,602 p=42040 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 19:49:16,045 p=42040 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 19:49:16,062 p=42040 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 19:49:19,698 p=42040 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 19:49:20,454 p=42040 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 19:49:20,523 p=42040 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 19:49:20,760 p=42040 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 19:49:20,835 p=42040 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:49:20,875 p=42040 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:49:20,933 p=42040 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 19:49:22,132 p=42040 u=osboxes n=ansible | ok: [localhost] => (item=alumno)
+2024-11-17 19:49:22,309 p=42040 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 19:49:22,926 p=42040 u=osboxes n=ansible | ok: [localhost] => (item=equipo)
+2024-11-17 19:49:23,356 p=42040 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 19:49:23,374 p=42040 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 19:49:23,636 p=42040 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: . expected token 'end of print statement', got 'Correa'
+2024-11-17 19:49:23,638 p=42040 u=osboxes n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleError: template error while templating string: expected token 'end of print statement', got 'Correa'. String: Nombre: {{ Emanuel }}\nApellido: \"{{ Gaona Correa }}\"\nDNI: {{ 43919363 }}\n. expected token 'end of print statement', got 'Correa'"}
+2024-11-17 19:49:23,671 p=42040 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: . expected token 'end of print statement', got 'Correa'
+2024-11-17 19:49:23,675 p=42040 u=osboxes n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "AnsibleError: template error while templating string: expected token 'end of print statement', got 'Correa'. String: Nombre: {{ Emanuel }}\nApellido: \"{{ Gaona Correa }}\"\nDNI: {{ 43919363 }}\n. expected token 'end of print statement', got 'Correa'"}
+2024-11-17 19:49:23,691 p=42040 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 19:49:23,691 p=42040 u=osboxes n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:49:23,691 p=42040 u=osboxes n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:50:53,029 p=42462 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 19:50:53,454 p=42462 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 19:50:53,475 p=42462 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 19:50:56,830 p=42462 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 19:50:58,167 p=42462 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 19:50:58,246 p=42462 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 19:50:58,378 p=42462 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 19:50:58,454 p=42462 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:50:58,462 p=42462 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 19:50:58,490 p=42462 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 19:50:59,600 p=42462 u=osboxes n=ansible | ok: [localhost] => (item=alumno)
+2024-11-17 19:50:59,750 p=42462 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 19:51:00,530 p=42462 u=osboxes n=ansible | ok: [localhost] => (item=equipo)
+2024-11-17 19:51:00,663 p=42462 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 19:51:00,675 p=42462 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 19:51:00,964 p=42462 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ansible.errors.AnsibleUndefinedVariable: 'Emanuel' is undefined. 'Emanuel' is undefined
+2024-11-17 19:51:00,969 p=42462 u=osboxes n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'Emanuel' is undefined. 'Emanuel' is undefined"}
+2024-11-17 19:51:01,010 p=42462 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ansible.errors.AnsibleUndefinedVariable: 'Emanuel' is undefined. 'Emanuel' is undefined
+2024-11-17 19:51:01,012 p=42462 u=osboxes n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'Emanuel' is undefined. 'Emanuel' is undefined"}
+2024-11-17 19:51:01,017 p=42462 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 19:51:01,017 p=42462 u=osboxes n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 19:51:01,018 p=42462 u=osboxes n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 20:00:56,895 p=42881 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 20:00:57,379 p=42881 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 20:00:57,401 p=42881 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 20:01:00,790 p=42881 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:01:01,893 p=42881 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:01:01,932 p=42881 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 20:01:02,113 p=42881 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 20:01:02,163 p=42881 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 20:01:02,213 p=42881 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 20:01:02,278 p=42881 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 20:01:03,632 p=42881 u=osboxes n=ansible | ok: [localhost] => (item=alumno)
+2024-11-17 20:01:03,774 p=42881 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 20:01:04,521 p=42881 u=osboxes n=ansible | ok: [localhost] => (item=equipo)
+2024-11-17 20:01:04,696 p=42881 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 20:01:04,732 p=42881 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 20:01:06,931 p=42881 u=osboxes n=ansible | changed: [localhost]
+2024-11-17 20:01:07,009 p=42881 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:01:07,032 p=42881 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del equipo] *************************************************************************************************************
+2024-11-17 20:01:08,721 p=42881 u=osboxes n=ansible | changed: [localhost]
+2024-11-17 20:01:08,874 p=42881 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:01:08,890 p=42881 u=osboxes n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] *************************************************************************************************
+2024-11-17 20:01:10,306 p=42881 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/etc/sudoers'
+2024-11-17 20:01:10,307 p=42881 u=osboxes n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "Traceback (most recent call last):\n  File \"/home/osboxes/.ansible/tmp/ansible-tmp-1731884469.0416534-43414-11830389023807/AnsiballZ_lineinfile.py\", line 107, in <module>\n    _ansiballz_main()\n  File \"/home/osboxes/.ansible/tmp/ansible-tmp-1731884469.0416534-43414-11830389023807/AnsiballZ_lineinfile.py\", line 99, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/osboxes/.ansible/tmp/ansible-tmp-1731884469.0416534-43414-11830389023807/AnsiballZ_lineinfile.py\", line 47, in invoke_module\n    runpy.run_module(mod_name='ansible.modules.lineinfile', init_globals=dict(_module_fqn='ansible.modules.lineinfile', _modlib_path=modlib_path),\n  File \"<frozen runpy>\", line 226, in run_module\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/tmp/ansible_lineinfile_payload_68f9e4_a/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 638, in <module>\n  File \"/tmp/ansible_lineinfile_payload_68f9e4_a/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 628, in main\n  File \"/tmp/ansible_lineinfile_payload_68f9e4_a/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 317, in present\nPermissionError: [Errno 13] Permission denied: b'/etc/sudoers'\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-17 20:01:10,387 p=42881 u=osboxes n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/etc/sudoers'
+2024-11-17 20:01:10,388 p=42881 u=osboxes n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "module_stderr": "Shared connection to 127.0.0.1 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/home/osboxes/.ansible/tmp/ansible-tmp-1731884469.0505419-43413-241788372796120/AnsiballZ_lineinfile.py\", line 107, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/osboxes/.ansible/tmp/ansible-tmp-1731884469.0505419-43413-241788372796120/AnsiballZ_lineinfile.py\", line 99, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/osboxes/.ansible/tmp/ansible-tmp-1731884469.0505419-43413-241788372796120/AnsiballZ_lineinfile.py\", line 47, in invoke_module\r\n    runpy.run_module(mod_name='ansible.modules.lineinfile', init_globals=dict(_module_fqn='ansible.modules.lineinfile', _modlib_path=modlib_path),\r\n  File \"<frozen runpy>\", line 226, in run_module\r\n  File \"<frozen runpy>\", line 98, in _run_module_code\r\n  File \"<frozen runpy>\", line 88, in _run_code\r\n  File \"/tmp/ansible_lineinfile_payload_je00ingm/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 638, in <module>\r\n  File \"/tmp/ansible_lineinfile_payload_je00ingm/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 628, in main\r\n  File \"/tmp/ansible_lineinfile_payload_je00ingm/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 317, in present\r\nPermissionError: [Errno 13] Permission denied: b'/etc/sudoers'\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-17 20:01:10,390 p=42881 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 20:01:10,391 p=42881 u=osboxes n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 20:01:10,392 p=42881 u=osboxes n=ansible | localhost                  : ok=5    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 20:03:18,366 p=43476 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 20:03:18,820 p=43476 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 20:03:18,840 p=43476 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 20:03:22,108 p=43476 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:03:22,962 p=43476 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:03:23,043 p=43476 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 20:03:23,184 p=43476 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 20:03:23,252 p=43476 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 20:03:23,264 p=43476 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 20:03:23,290 p=43476 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 20:03:24,314 p=43476 u=osboxes n=ansible | ok: [localhost] => (item=alumno)
+2024-11-17 20:03:24,771 p=43476 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 20:03:25,142 p=43476 u=osboxes n=ansible | ok: [localhost] => (item=equipo)
+2024-11-17 20:03:25,699 p=43476 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 20:03:25,711 p=43476 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 20:03:27,563 p=43476 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:03:27,656 p=43476 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:03:27,673 p=43476 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del equipo] *************************************************************************************************************
+2024-11-17 20:03:29,060 p=43476 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:03:29,524 p=43476 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:03:29,535 p=43476 u=osboxes n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] *************************************************************************************************
+2024-11-17 20:03:30,967 p=43476 u=osboxes n=ansible | changed: [localhost]
+2024-11-17 20:03:31,060 p=43476 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:03:31,087 p=43476 u=osboxes n=ansible | TASK [Otra tarea] ****************************************************************************************************************************************************
+2024-11-17 20:03:31,165 p=43476 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 20:03:31,169 p=43476 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 20:03:31,261 p=43476 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 20:03:31,261 p=43476 u=osboxes n=ansible | 127.0.0.1                  : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 20:03:31,262 p=43476 u=osboxes n=ansible | localhost                  : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 20:14:08,125 p=44119 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 20:14:08,574 p=44119 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 20:14:08,595 p=44119 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 20:14:12,416 p=44119 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:14:13,037 p=44119 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:14:13,076 p=44119 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 20:14:13,220 p=44119 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 20:14:13,304 p=44119 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 20:14:13,319 p=44119 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 20:14:13,358 p=44119 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 20:14:14,475 p=44119 u=osboxes n=ansible | ok: [localhost] => (item=alumno)
+2024-11-17 20:14:14,609 p=44119 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 20:14:15,210 p=44119 u=osboxes n=ansible | ok: [localhost] => (item=equipo)
+2024-11-17 20:14:15,970 p=44119 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 20:14:15,993 p=44119 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 20:14:17,766 p=44119 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:14:18,155 p=44119 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:14:18,194 p=44119 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del equipo] *************************************************************************************************************
+2024-11-17 20:14:20,370 p=44119 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:14:20,523 p=44119 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:14:20,535 p=44119 u=osboxes n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] *************************************************************************************************
+2024-11-17 20:14:21,764 p=44119 u=osboxes n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Destination /etc/sudoers.d/2PSupervisores does not exist !", "rc": 257}
+2024-11-17 20:14:21,922 p=44119 u=osboxes n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "Destination /etc/sudoers.d/2PSupervisores does not exist !", "rc": 257}
+2024-11-17 20:14:21,925 p=44119 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 20:14:21,926 p=44119 u=osboxes n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 20:14:21,928 p=44119 u=osboxes n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-17 20:17:04,589 p=44716 u=osboxes n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 20:17:04,899 p=44716 u=osboxes n=ansible | PLAY [all] ***********************************************************************************************************************************************************
+2024-11-17 20:17:04,975 p=44716 u=osboxes n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************
+2024-11-17 20:17:08,119 p=44716 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:17:08,713 p=44716 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:17:08,782 p=44716 u=osboxes n=ansible | TASK [include_role : 2do_parcial] ************************************************************************************************************************************
+2024-11-17 20:17:08,922 p=44716 u=osboxes n=ansible | TASK [2do_parcial : debug] *******************************************************************************************************************************************
+2024-11-17 20:17:08,991 p=44716 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 20:17:08,996 p=44716 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 20:17:09,043 p=44716 u=osboxes n=ansible | TASK [2do_parcial : Crear carpetas para datos] ***********************************************************************************************************************
+2024-11-17 20:17:10,181 p=44716 u=osboxes n=ansible | ok: [localhost] => (item=alumno)
+2024-11-17 20:17:10,329 p=44716 u=osboxes n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-17 20:17:10,903 p=44716 u=osboxes n=ansible | ok: [localhost] => (item=equipo)
+2024-11-17 20:17:11,264 p=44716 u=osboxes n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-17 20:17:11,299 p=44716 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] *************************************************************************************************************
+2024-11-17 20:17:12,979 p=44716 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:17:13,203 p=44716 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:17:13,214 p=44716 u=osboxes n=ansible | TASK [2do_parcial : Generar archivo de datos del equipo] *************************************************************************************************************
+2024-11-17 20:17:14,755 p=44716 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:17:14,929 p=44716 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:17:14,949 p=44716 u=osboxes n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] *************************************************************************************************
+2024-11-17 20:17:16,297 p=44716 u=osboxes n=ansible | ok: [localhost]
+2024-11-17 20:17:16,467 p=44716 u=osboxes n=ansible | ok: [127.0.0.1]
+2024-11-17 20:17:16,492 p=44716 u=osboxes n=ansible | TASK [Otra tarea] ****************************************************************************************************************************************************
+2024-11-17 20:17:16,572 p=44716 u=osboxes n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 20:17:16,627 p=44716 u=osboxes n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 20:17:16,779 p=44716 u=osboxes n=ansible | PLAY RECAP ***********************************************************************************************************************************************************
+2024-11-17 20:17:16,779 p=44716 u=osboxes n=ansible | 127.0.0.1                  : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 20:17:16,781 p=44716 u=osboxes n=ansible | localhost                  : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
